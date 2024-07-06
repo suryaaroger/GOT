@@ -5,7 +5,8 @@ from psycopg2 import Error,extras
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+CORS(app) 
+
 
 def con():
     connection=None
@@ -21,6 +22,9 @@ def con():
         print(f"the error is '{e}")
     return connection
 
+@app.route('/')
+def fetch():
+    return 'Hello Ajay'
 # @app.route('/item/<int:id>',methods=["GET"])
 # def fun(id):
 #     connection= con()
