@@ -24,7 +24,7 @@ def con():
 
 @app.route('/')
 def fetch():
-    return 'Hello World'
+    return 'Hello Ajay'
 # @app.route('/item/<int:id>',methods=["GET"])
 # def fun(id):
 #     connection= con()
